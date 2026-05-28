@@ -330,13 +330,15 @@ enterprise-performance-report-automation
 ```
 
 ---
-## Visitor Stats
-
-![Views](https://komarev.com/ghpvc/?username=Sri535&color=brightgreen)
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=PerformanceTestAutomations)
 
 # 🌌 Final Tagline
 
 ```text
 Turning Raw Load Test Data into Executive Decisions.
 ```
+---
+## Visitor Stats
+
+![Views](https://komarev.com/ghpvc/?username=Sri535&color=brightgreen)
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=PerformanceTestAutomations)
+
