@@ -1,344 +1,266 @@
-# 🌌 Performance Test Report Automation Suite
+# 🚀 Performance Engineering Toolkit
 
-<p align="center">
-<img src="https://img.shields.io/badge/Performance-Automation-blue?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/JMeter-HTML%20Reports-red?style=for-the-badge&logo=apache&logoColor=white" />
-<img src="https://img.shields.io/badge/SLA-Validation-success?style=for-the-badge" />
-<img src="https://img.shields.io/badge/PostgreSQL-Dynamic%20SLA-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-Actions-black?style=for-the-badge&logo=githubactions" />
-<img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge" />
-</p>
+> **An open-source toolkit for Enterprise Performance Engineering, Test Automation, Reporting, SLA Validation, and Performance Analysis.**
 
-<p align="center">
-<b>Transform Raw Apache JMeter Reports into Executive Dashboards, SLA Decisions & Automated Stakeholder Notifications</b>
-</p>
+![GitHub last commit](https://img.shields.io/github/last-commit/Sri535/Performance-Engineering-Toolkit)
+![GitHub repo size](https://img.shields.io/github/repo-size/Sri535/Performance-Engineering-Toolkit)
+![GitHub stars](https://img.shields.io/github/stars/Sri535/Performance-Engineering-Toolkit?style=social)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-# 🚀 Overview
+## 📌 Overview
 
-Performance Test Report Automation Suite is an enterprise-grade Python framework that transforms raw Apache JMeter HTML reports into executive dashboards with:
+Performance Engineering Toolkit is a collection of reusable tools, utilities, frameworks, templates, and best practices built to simplify enterprise performance engineering activities.
 
-* ✅ Common SLA Validation
-* ✅ Dynamic SLA Validation from PostgreSQL
-* ✅ PASS / FAIL Decision Engine
-* ✅ Error % Analysis
-* ✅ Transactions Need Attention Section
-* ✅ Auto Email Notifications
-* ✅ GitHub Actions / Jenkins Ready
-* ✅ Stakeholder Friendly Executive Reports
+This repository is designed for Performance Engineers, SREs, DevOps Engineers, QA Engineers, and Developers who want to improve application scalability, automate reporting, and streamline performance testing workflows.
+
+The long-term goal is to provide a single place for practical tools used throughout the Performance Engineering lifecycle.
 
 ---
 
-# 🌑 Hero Banner
+# 🎯 Vision
+
+Build one of the most comprehensive open-source Performance Engineering toolkits covering
+
+- Performance Testing
+- Test Automation
+- Report Automation
+- SLA Validation
+- Performance Dashboards
+- Performance Analysis
+- CI/CD Integration
+- Best Practices
+- Documentation
+- Learning Resources
+
+---
+
+# ✨ Features
+
+## Performance Testing
+
+- Apache JMeter Utilities
+- Test Plan Templates
+- CSV Data Management
+- Parameterization Examples
+- Correlation Examples
+- Distributed Testing
+
+---
+
+## Report Automation
+
+- HTML Report Parsing
+- CSV Report Processing
+- Trend Analysis
+- Historical Comparison
+- Executive Report Generation
+
+---
+
+## SLA Validation
+
+- Dynamic SLA Validation
+- Threshold Comparison
+- Pass/Fail Summary
+- KPI Verification
+
+---
+
+## Dashboard
+
+- Google Sheets Dashboard
+- Looker Studio Dashboard
+- Historical Trends
+- Execution Summary
+
+---
+
+## CI/CD
+
+- Jenkins Integration
+- Automated Report Generation
+- Build Validation
+- Performance Gate Checks
+
+---
+
+## Engineering Utilities
+
+- Python Automation
+- Report Parser
+- Data Extraction
+- Utility Scripts
+
+---
+
+# 📂 Repository Structure
 
 ```text
-██████╗ ███████╗██████╗ ███████╗ ██████╗ ██████╗ ███╗   ███╗
-██╔══██╗██╔════╝██╔══██╗██╔════╝██╔═══██╗██╔══██╗████╗ ████║
-██████╔╝█████╗  ██████╔╝█████╗  ██║   ██║██████╔╝██╔████╔██║
-██╔═══╝ ██╔══╝  ██╔══██╗██╔══╝  ██║   ██║██╔══██╗██║╚██╔╝██║
-██║     ███████╗██║  ██║██║     ╚██████╔╝██║  ██║██║ ╚═╝ ██║
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝
-```
+Performance-Engineering-Toolkit/
 
----
-
-# 🎯 Business Value
-
-This automation removes manual effort after every load test.
-
-| Traditional Process   | Automated Here |
-| --------------------- | -------------- |
-| Manually check APIs   | ✅              |
-| Verify SLA row by row | ✅              |
-| Build Summary         | ✅              |
-| Email stakeholders    | ✅              |
-| Decide Go / No-Go     | ✅              |
-
----
-
-# 📁 Project Structure
-
-```bash
-PerformanceTestAutomations/
-├── NewGenaratePTReportCommonSLA.py
-├── NewGeneratePTReport_DynamicSLA.py
-├── requirements.txt
-├── .github/
-│   └── workflows/
-│       └── performance-report.yml
-├── screenshots/
+├── docs/
+│   ├── Best Practices
+│   ├── Performance Engineering Guide
+│   ├── NFR Checklist
+│   ├── Capacity Planning
+│   └── Root Cause Analysis
+│
+├── jmeter/
+│   ├── Templates
+│   ├── Test Plans
+│   ├── Functions
+│   └── Examples
+│
+├── python/
+│   ├── HTML Parser
+│   ├── SLA Validator
+│   ├── Report Generator
+│   └── Utilities
+│
+├── dashboards/
+│   ├── Google Sheets
+│   ├── Looker Studio
+│   └── Samples
+│
+├── ci-cd/
+│   ├── Jenkins
+│   └── Automation
+│
+├── reports/
+│
+├── samples/
+│
 └── README.md
 ```
 
 ---
 
-# ⚡ Core Modules
+# 🛠 Technology Stack
 
-## 1️⃣ Common SLA Script
-
-```bash
-NewGenaratePTReportCommonSLA.py
-```
-
-Use one SLA for all transactions or row-wise SLA list.
-
-Examples:
-
-```bash
-2000
-2000,3000,5000
-```
+- Apache JMeter
+- Python
+- HTML
+- CSS
+- JavaScript
+- Jenkins
+- Google Sheets
+- Looker Studio
+- Git
+- GitHub Actions *(planned)*
 
 ---
 
-## 2️⃣ Dynamic SLA Script
+# 📖 Current Modules
 
-```bash
-NewGeneratePTReport_DynamicSLA.py
-```
-
-Fetches SLA from PostgreSQL table:
-
-```sql
-autodefect.perf_sla
-```
-
-Sample:
-
-| app     | transaction | sla    |
-| ------- | ----------- | ------ |
-| Billing | Login API   | 3000ms |
-| Billing | Search API  | 5000ms |
+| Module | Status |
+|----------|--------|
+| JMeter Utilities | ✅ In Progress |
+| Report Automation | ✅ In Progress |
+| SLA Validation | ✅ In Progress |
+| Dashboard | ✅ In Progress |
+| Python Utilities | ✅ In Progress |
+| Documentation | 🚧 Planned |
+| Jenkins Integration | 🚧 Planned |
+| Grafana Dashboard | 📅 Roadmap |
+| K6 Support | 📅 Roadmap |
 
 ---
 
-# 🏗 Architecture
+# 📊 Roadmap
 
-```text
-Apache JMeter Execution
-        │
-        ▼
-Raw HTML Report Generated
-        │
-        ▼
-Python Automation Engine
-        │
- ┌──────┴───────────┐
- ▼                  ▼
-Common SLA      Dynamic SLA
-Engine          Engine
-                    │
-                    ▼
-              PostgreSQL DB
-        │
-        ▼
-Executive Dashboard
-        │
-        ▼
-SMTP Email Alerts
-        │
-        ▼
-Stakeholders
-```
+## Phase 1
+
+- JMeter Framework
+- HTML Report Parser
+- SLA Validation
+- Dashboard
 
 ---
 
-# 📊 Dashboard Preview
+## Phase 2
 
-## Executive Summary
-
-```text
-┌──────────────────────────────────────┐
-│ Application : Billing Platform      │
-│ Environment : SIT                   │
-│ Users       : 500                   │
-│ Duration    : 60 Min                │
-│ Status      : PASS / GO ✅          │
-│ Error %     : 0.01                  │
-│ SLA Failed  : 0                     │
-└──────────────────────────────────────┘
-```
-
-## Transactions Need Attention
-
-```text
-┌────────────────────────────────────────────┐
-│ Transaction   Avg Time   SLA   Result     │
-├────────────────────────────────────────────┤
-│ Login API     4.5 sec    3s    ❌ Missed  │
-│ Search API    6.0 sec    5s    ❌ Missed  │
-│ Payment API   2.0 sec    2s    ✅ Met     │
-└────────────────────────────────────────────┘
-```
+- Jenkins Integration
+- Email Notifications
+- Trend Reports
+- Historical Analysis
 
 ---
 
-# 🔥 PASS / FAIL Logic
+## Phase 3
 
-Run marked FAIL if:
-
-* ❌ Success Rate < 99%
-* ❌ Any SLA Breach
-* ❌ Any Transaction Error > 3%
-
-Else:
-
-```text
-PASS / GO ✅
-```
+- Grafana Dashboard
+- Prometheus Support
+- K6 Support
+- API Performance Module
 
 ---
 
-# ⚙ Installation
+## Phase 4
 
-```bash
-git clone https://github.com/yourusername/PerformanceTestAutomations.git
-cd PerformanceTestAutomations
-pip install -r requirements.txt
-```
+- AI Performance Report Analyzer
+- Intelligent Bottleneck Detection
+- Performance Recommendation Engine
 
 ---
 
-# ▶ Usage
+# 📚 Documentation
 
-## Common SLA Mode
+Upcoming documentation includes
 
-```bash
-python NewGenaratePTReportCommonSLA.py 2000 Billing SIT APP123 UI_API 500 3600 CHG123 10AM 11AM Login team@company.com report.html
-```
-
-## Dynamic SLA Mode
-
-```bash
-python NewGeneratePTReport_DynamicSLA.py Billing SIT APP123 UI_API 500 3600 CHG123 10AM 11AM Login team@company.com report.html
-```
-
----
-
-# 🤖 GitHub Actions CI/CD
-
-Create file:
-
-```bash
-.github/workflows/performance-report.yml
-```
-
-```yaml
-name: Performance Report Automation
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.11
-
-      - name: Install Dependencies
-        run: pip install beautifulsoup4 psycopg2
-
-      - name: Run Script
-        run: |
-          python NewGeneratePTReport_DynamicSLA.py \
-          Billing SIT APP123 UI_API 500 3600 CHG123 \
-          10AM 11AM Login team@company.com report.html
-```
+- Performance Engineering Best Practices
+- Load Testing Strategy
+- NFR Checklist
+- Capacity Planning Guide
+- Root Cause Analysis Guide
+- JMeter Best Practices
+- Performance Metrics
+- KPI Reference
 
 ---
 
-# 🔐 Security Recommendations
+# 🤝 Contributing
 
-Move credentials to:
+Contributions, ideas, bug reports, and feature requests are welcome.
 
-```text
-.env
-GitHub Secrets
-AWS Secrets Manager
-Azure Key Vault
-Hashicorp Vault
-```
+If you have suggestions to improve the toolkit, feel free to open an Issue or submit a Pull Request.
 
 ---
 
-# 📈 Future Roadmap
+# ⚠️ Disclaimer
 
-* ✅ Historical Trend Charts
-* ✅ PDF Export
-* ✅ Slack / Teams Notifications
-* ✅ AI Root Cause Summary
-* ✅ Grafana Integration
-* ✅ Docker Support
-* ✅ REST API Trigger
+This repository contains generic utilities, reusable examples, and learning resources.
+
+No proprietary company code, confidential information, customer data, or internal artifacts are included.
 
 ---
 
 # 👨‍💻 Author
 
-## Sreenivasula Reddy Mukkamalla
+**Sreenivasula Reddy M**
 
-Lead Performance Test Engineer
+Lead Performance Engineer
 
-Specialized in:
+Enterprise Performance Engineering
 
-* Performance Engineering
-* JMeter
-* LoadRunner
-* Chaos Testing
-* Python Automation
-* DevOps CI/CD
-* Executive Reporting
-
----
-
-# 🌟 Why Recruiters Like This Project
-
-This repository demonstrates:
-
-* ✅ Real Enterprise Automation
-* ✅ Python Development Skills
-* ✅ CI/CD Integration
-* ✅ Reporting Engineering
-* ✅ Database Connectivity
-* ✅ Performance Testing Expertise
+- LinkedIn: https://www.linkedin.com/in/sreenivasula-reddy-mukkamalla-89041aa3/
+- GitHub: https://github.com/Sri535
 
 ---
 
 # ⭐ Support
 
-If you like this project:
+If you find this repository useful,
 
-* ⭐ Star the repo
-* 🍴 Fork it
-* 📩 Connect for collaboration
+⭐ Star the repository
 
----
+🍴 Fork it
 
-# 🎯 Suggested Repository Name
-
-```text
-enterprise-performance-report-automation
-```
+📢 Share it with the Performance Engineering community.
 
 ---
 
-# 🌌 Final Tagline
+## 🚀 Future Vision
 
-```text
-Turning Raw Load Test Data into Executive Decisions.
-```
----
-## Visitor Stats
-
-![Views](https://komarev.com/ghpvc/?username=Sri535&color=brightgreen)
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=PerformanceTestAutomations)
-
+The goal is to make **Performance Engineering Toolkit** a practical resource that helps engineers automate repetitive tasks, improve testing efficiency, and adopt consistent performance engineering practices across enterprise projects.
